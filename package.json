@@ -1,27 +1,29 @@
 {
-    "name": "boiler",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "name": "react-typescript-tailwind-vite-starter",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
     "scripts": {
-        "test": "vitest",
-        "test:run": "vitest run",
-        "test:ui": "vitest --ui",
-        "test:coverage": "vitest run --coverage",
-        "type-check": "tsc --noEmit"
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "packageManager": "pnpm@10.12.1",
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
     "devDependencies": {
-        "@testing-library/jest-dom": "^6.6.3",
-        "@testing-library/react": "^16.3.0",
-        "@testing-library/user-event": "^14.6.1",
-        "@vitest/coverage-v8": "^3.2.4",
-        "@vitest/ui": "^3.2.4",
-        "jsdom": "^26.1.0",
-        "msw": "^2.10.2",
-        "vitest": "^3.2.4"
+        "@eslint/js": "^9.29.0",
+        "@types/react": "^19.1.8",
+        "@types/react-dom": "^19.1.6",
+        "@vitejs/plugin-react-swc": "^3.10.2",
+        "eslint": "^9.29.0",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "globals": "^16.2.0",
+        "typescript": "~5.8.3",
+        "typescript-eslint": "^8.34.1",
+        "vite": "^7.0.0"
     }
 }
